@@ -1,0 +1,39 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background:burlywood;
+}
+section{
+    margin:0 1em;
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5em;
+    letter-spacing: 1px;
+}
+.output{
+    border-right: 1px #fff solid;
+}
+.problem{
+    background:skyblue;
+}
+.solving{
+    background:rgb(235, 158, 135);
+}
+.impares{
+    background:#adadad;
+}
+.pares{
+    background:#ffffff;
+}
+.circle{
+    list-style-type: disc;
+}
+.empty{
+    list-style-type: circle;    
+}
+.little_square{
+    list-style-type: square;
+}
+#sen_cos{
+    border:1px solid black;
+    color: aliceblue;
+}

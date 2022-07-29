@@ -1,0 +1,108 @@
+/*delete cache updates the style*/
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    background:#ffc8dd;
+    /*Google Fonts*/
+    font-family: 'Roboto';
+    text-align: justify;
+}
+
+form{
+    padding: 50px 20px;
+    background:#ededed;
+    margin-top: 70px;
+    padding-top: 28px;
+}
+h1{ 
+    text-align: center;
+    padding: 12px;
+    color:rgb(41, 39, 39);
+}
+section{
+    margin:0 1em;
+    color:#fff;
+    font-family: 'Roboto';
+    /*font-size: 3.5em;*/
+    letter-spacing: 1px;
+}
+aside, img{
+	width: 200px;
+	height: 200px;
+}
+
+.container {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+.pannels{
+    width:30em;
+    margin-left:auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(10px,max-content));
+    padding: 2em;
+    margin: 0 2em;
+}
+.pannel{
+    width: 8.5em;
+    background: url(../cv.png)no-repeat center fixed;
+    background-size:cover;
+    box-shadow: -7px 0px 20px 15px rgba(red, green, blue, alpha);
+    border-radius: 10px;
+    transform: skew(5deg);
+    border: #dbdbdb solid 2px;
+}
+.pannel:nth-child(1){
+    height:12em;
+}
+.pannel:nth-child(2){
+    height:16em;
+    z-index: 2;
+}
+.pannel:nth-child(3){
+    height:27em;
+    z-index: 1;
+}
+.pannel:nth-child(4){
+    height:20em;
+}
+.pannel:nth-child(5){
+    height:10em;
+}
+nav{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #6b705c;
+    max-width: 1450px;
+}
+.link{
+    text-decoration:none;
+    color:#ededed;
+    margin: 5px;
+}
+.link:hover{
+    background:#b7b7a4;
+}
+
+.separator{
+    margin-left: 20px;
+}
+
+.profile{
+    text-decoration: none;
+}

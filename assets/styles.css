@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    background: #ffcbcb;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.link {
+    border-radius: 4px;
+    text-decoration: none;
+    background: #6b705c;
+    color:#ededed;
+    height: 20px;
+    font-weight: normal;
+}
+
+#lost_in_this_web{
+    width: 250px;
+    height: 250px;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+.transition{
+    position: absolute;
+}
+
+.contained_projects{
+    display: none;
+}
+
+#my_projects_title{
+    display: inline;
+}
+
+#see_all{
+    margin-left: 140px;
+}
+
+.project_image{
+    width: 50px;
+    height: 50px;
+}
+
+.project_title{
+    font-size: x-small;
+}
+
+.project{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#QR_code_title{
+    padding-top: 10px;
+}
+
+.html_css{
+    width: 50px;
+    height: 50px;
+}
+
+#js{
+    width: 60px;
+    height: 60px;
+}
+
+#php{
+    width: 70px;
+    height: 70px;  
+}
+
+#mysql{
+    width: 60px;
+    height: 60px;  
+}
+
+#linux{
+    width: 50px;
+    height: 50px;    
+}
+
+
+#git{
+    width: 50px;
+    height: 50px;   
+}
+
+.separated_tech{
+    display: inline-block;
+}
+
+.office{
+    width: 20px;
+    height: 20px;      
+}
