@@ -536,14 +536,94 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     
-    
-    <!-- Main content -->
+    <section class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box">
+                            <div class="box-header with-border">
+                                <h1 class="box-title">Categoría <button class="btn btn-success" id="btnagregar"
+                                        onclick="mostrarelformulario(true)"><i class="fa fa-plus-circle"></i>
+                                        Agregar</button>
+                                </h1>
+                                <div class="box-tools pull-right">
+                                </div>
+                            </div>
+                            <!-- /.box-header -->
+                            <!-- centro -->
+                            <div class="panel-body table-responsive" id="listadoregistros">
+                                <table id="tableList"
+                                    class="table table-striped table-bordered table-condensed table-hover">
+                                    <thead>
+                                        <th>Opciones</th>
+                                        <th>Nombre</th>
+                                        <th>Descripción</th>
+                                        <th>Estado</th>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                    <tfoot>
+                                        <th>Opciones</th>
+                                        <th>Nombre</th>
+                                        <th>Descripción</th>
+                                        <th>Estado</th>
+                                    </tfoot>
+                                </table>
+                            </div>
 
-<?php require_once "menu.php"; ?>
-    
-    <!-- /.content -->
+
+
+                            <div class="card-body" id="formularioregistros">
+                                <form name="formulario" id="formulario" method="POST">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+
+                                            <div class="form-group">
+                                                <label>nombre</label>
+                                                <input type="hidden" name="idcategoria" id="idcategoria">
+                                                <input type="text" class="form-control" name="nombre" id="nombre"
+                                                    placeholder="escribir nombre" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>descripcion</label>
+                                                <input type="text" class="form-control" name="descripcion"
+                                                    id="descripcion" placeholder="escribir descripcion" required>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <button class="btn btn-primary" type="submit" id="btnGuardar"><i
+                                                class="fa fa-save"></i> Guardar</button>
+
+                                        <button class="btn btn-danger" onclick="cancelarformulario()" type="button"><i
+                                                class="fa fa-arrow-circle-left"></i> Cancelar</button>
+                                    </div>
+
+
+
+
+                                </form>
+                            </div>
+
+
+
+
+
+
+                            <!--Fin centro -->
+                        </div><!-- /.box -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </section><!-- /.content -->
+
   </div>
   <!-- /.content-wrapper -->
+
+
 
   <?php require_once "footer.php"; ?>
 
@@ -553,17 +633,6 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery -->
-<script src="<?php echo $ruta;?>plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="<?php echo $ruta;?>plugins/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 
-<!-- AdminLTE App -->
-<script src="<?php echo $ruta;?>dist/js/adminlte.js"></script>
-
-
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?php echo $ruta;?>dist/js/pages/dashboard.js"></script>
 </body>
 </html>
