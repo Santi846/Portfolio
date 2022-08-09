@@ -5,6 +5,7 @@
 
 body{
     margin: 0;
+    margin-left: 3px;
     background: #ffcbcb;
     font-family: 'Roboto', sans-serif;
 }
@@ -66,9 +67,15 @@ body{
 }
 
 #js{
+
     width: 60px;
     height: 60px;
 }
+
+#JS_title{
+    margin-bottom: 10px;
+}
+
 
 #php{
     width: 70px;
@@ -76,8 +83,14 @@ body{
 }
 
 #mysql{
+    margin-left: 15px;
+    margin-bottom: 10px;
     width: 60px;
     height: 60px;  
+}
+
+#MySQL_title{
+    margin-left: 15px;
 }
 
 #linux{
@@ -98,4 +111,73 @@ body{
 .office{
     width: 20px;
     height: 20px;      
+}
+
+#network{
+    margin-top: 50px;
+}
+
+#gitgub_network{
+    margin-top: 20px;
+}
+
+#linkedin_img{
+    width: 50px;
+    height: 50px;
+}
+
+#github_img{
+    width: 50px;
+    height: 50px;
+}
+
+.techs{
+    margin-top: -20px;
+}
+
+.tool{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#container_tools{
+    margin-left: -1px;
+}
+
+#jira_img{
+    padding-bottom: 10px;
+}
+
+#trello_img{
+    padding-bottom: 5px;
+}
+
+#miro_img{
+    padding-bottom: 10px;
+}
+
+.office_tool{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.netwrok_blocks{
+    display: inline-block;
+}
+
+#network{
+    margin-left: 180px;
+}
+
+#networks_title{
+    margin-bottom: -40px;
+}
+
+#swipe_up_img{
+    position: sticky;
+    display: inline;
+    width: 50px;
+    height: 50px; 
+    left: 400px;  
+    top: 120px;
 }

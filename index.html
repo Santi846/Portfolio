@@ -21,14 +21,14 @@
 
     </div>
     <header>
-        <div class="container">
+        <div class="container" id="container">
             <!--Navigation bar-->
         <nav>
-            <a href="" class="link">Acerca de mi</a>
-            <a href="" class="link">Mis proyectos</a>
-            <a href="" class="link">Tecnología</a>
-            <a href="" class="link">Línea temporal</a>
-            <a href="" class="link">Formulario de Contacto</a>
+            <a href="#about_me" class="link">Acerca de mi</a>
+            <a href="#my_projects_title" class="link">Mis proyectos</a>
+            <a href="#frontend" class="link">Tecnología</a>
+            <a href="#timeline" class="link">Línea temporal</a>
+            <a href="#contact_me_here" class="link">Contacto</a>
         </nav>
         </div>
     </header>
@@ -51,8 +51,8 @@
         
     </div>
     <!--About me-->
-    <div class="about_me">
-        <p>Soy programador web autodidacta. Soy metódico, proactivo, sociable, responsable, creativo y dedicado. También tengo conocimiento de infraestructura.</p>
+    <div class="about_me" id="about_me">
+        <p>Soy programador web autodidacta. También soy metódico, proactivo, sociable, responsable, creativo y dedicado. Ademas, cuento con conocimiento en infraestructura.</p>
     </div>
     <div class="package">
         <!--Projects-->
@@ -102,8 +102,9 @@
     </div>
     <!--Technologies-->
     <h3>Tecnologías</h3>
-    <div>
-        <h4 class="techs" id="frontend">Frontend</h4>
+    <h4 id="frontend">Frontend</h4>
+    <div class="techs">
+
         <div class="separated_tech">
             <h5>HTML</h5>
             <img src="HTML.png" alt="HTML" class="html_css">
@@ -113,10 +114,19 @@
             <img src="CSS.png" alt="CSS" class="html_css">
         </div>
         <div class="separated_tech" id="tech_javascript">
-            <h5>JavaScript</h5>
+            <h5 id="JS_title">JavaScript</h5>
             <img src="javascript.png" alt="JS" id="js">
         </div>
     </div>
+
+    <!--Swip up bottom-->
+    <div id="swipe_up">
+        <a href="#container">
+            <img src="swipeUp.png" alt="swipe_up" id="swipe_up_img">
+        </a>
+
+    </div>
+    
     <div>
         <h4>Backend</h4>
         <div class="separated_tech">
@@ -124,7 +134,7 @@
             <img src="php.png" alt="PHP" id="php">
         </div>
         <div class="separated_tech">
-            <h5>MySQL</h5>
+            <h5 id="MySQL_title">MySQL</h5>
             <img src="mysql.png" alt="MySQL" id="mysql">
         </div>
     </div>
@@ -134,32 +144,32 @@
             <img src="bash-git.png" alt="Git" id="git">
     </div>
     <!--Tools-->
-    <div>
-        <h4>Herramientas</h4>
-            <div>
+    <h4>Herramientas</h4>
+    <div id="container_tools"> 
+            <div class="tool" id="tool_jira">
                 <h5>Jira</h5>
-                <img src="jira.png" alt="Jira">
+                <img src="jira.png" alt="Jira" id="jira_img">
             </div>
-            <div>
+            <div class="tool">
                 <h5>Notion</h5>
                 <img src="notion.png" alt="Notion">
             </div> 
-            <div>
+            <div class="tool">
                 <h5>Trello</h5>
-                <img src="trello.png" alt="Trello">
+                <img src="trello.png" alt="Trello" id="trello_img">
             </div>           
-            <div>
+            <div class="tool">
                 <h5>Miro</h5>
-                <img src="miro.png" alt="Miro">
+                <img src="miro.png" alt="Miro" id="miro_img">
             </div>    
     </div>
     <div>
         <h4>Ofimática</h4>
-            <div>
+            <div class="office_tool">
                 <h5>Word</h5>
                 <img src="word.png" alt="Word" class="office">
             </div>  
-            <div>
+            <div class="office_tool">
                 <h5>Exccel</h5>
                 <img src="excel.png" alt="Excel" class="office">
             </div>  
@@ -167,7 +177,7 @@
     <!--Timeline-->
     <div>
         <h3>Linea Temporal</h3>
-        <section class="timeline">
+        <section class="timeline" id="timeline">
             <div class="timeline-line">
                 <span class="timeline-line-inner-line"></span>
             </div>
@@ -188,13 +198,34 @@
         </section>
     </div>
     <!--Contact form-->
+    <h2 id="contact_me_here">Por si deseas comunicarte conmigo</h2>
     <div>
 
+        <form action="/action_page.php">
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+          </form> 
     </div>
-    <!--Swip up bottom-->
-    <div>
+    
 
     </main>
+
+    <h3 id="networks_title">Mis redes</h3>
+    <footer id="network">
+        <div class="netwrok_blocks" id="linkedin_network">
+            <a href="https://www.linkedin.com/in/santiago-arocha-64960b202/" target="_blank">
+                <img src="linkedin.png" alt="linkedin" id="linkedin_img">
+            </a>
+        </div>
+        <div class="netwrok_blocks" id="gitgub_network">
+            <a href="https://github.com/Santi846" target="_blank">
+                <img src="github.png" alt="github" id="github_img">
+            </a>
+        </div>
+    </footer>
 
 </body>
 </html>
