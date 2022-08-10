@@ -3,6 +3,8 @@
     font-weight: bold;
 }
 
+/*Mobile First*/
+
 body{
     margin: 0;
     margin-left: 3px;
@@ -40,7 +42,7 @@ body{
 }
 
 #see_all{
-    margin-left: 140px;
+    margin-left: 190px;
 }
 
 .project_image{
@@ -174,10 +176,13 @@ body{
 }
 
 #swipe_up_img{
-    position: sticky;
-    display: inline;
+    position: fixed;
     width: 50px;
     height: 50px; 
     left: 400px;  
-    top: 120px;
+    bottom: 70px;
+}
+
+#submit{
+    margin-top: 20px;
 }
