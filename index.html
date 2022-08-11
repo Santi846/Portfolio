@@ -202,16 +202,16 @@
     <h2 id="contact_me_here">Por si deseas comunicarte conmigo</h2>
     <div>
 
-        <form action="mailto:arochas846@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
+        <form action="mailto:arochas846@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm" id="EmailForm">
 
-            <label class = "field_label"for="email">Email:</label><br>
-            <input type="email"  class="field" id="email" name="email"><br>
+            <label class = "field_label"for="email">Su email:</label><br>
+            <input type="email"  class="field" id="email" name="email" required><br>
 
             <label class = "field_label"for="topic">Asunto:</label><br>
-            <input type="text"  class="field" id="topic" name="topic"><br>
+            <input type="text"  class="field" id="topic" name="topic" required><br>
 
             <label class = "field_label"for="message">Mensaje:</label><br>
-            <textarea type="text"  class="field" id="message" name="message" rows="6" cols="20"> </textarea><br>
+            <textarea type="text"  class="field" id="message" name="message" rows="6" cols="20" required> </textarea><br>
 
             <button class="button" id="button_clean">Limpiar</button>
 

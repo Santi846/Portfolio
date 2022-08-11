@@ -85,3 +85,9 @@ function remove(){
     //Remove another letter
     charCount++;
 };
+
+function cleanForm(e) {
+    e.preventDefault();
+    let emailForm = document.getElementById("EmailForm");
+    emailForm.reset();
+}
