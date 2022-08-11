@@ -59,7 +59,7 @@
         <div class="projects">
             <div>
                 <h2 id="my_projects_title">Mis proyectos</h2>  
-                <button type="button" id="see_all">Ver todos</button>
+                <button type="button" class="button" id="see_all">Ver todos</button>
             </div>
             
         <!--Project 1-->
@@ -202,14 +202,20 @@
     <h2 id="contact_me_here">Por si deseas comunicarte conmigo</h2>
     <div>
 
-        <form action="/action_page.php" method="post">
-            <label for="fname">Nombre:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Apellido:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <input type="submit" value="Enviar" id="submit">
+        <form action="mailto:arochas846@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
+
+            <label class = "field_label"for="email">Email:</label><br>
+            <input type="email"  class="field" id="email" name="email"><br>
+
+            <label class = "field_label"for="topic">Asunto:</label><br>
+            <input type="text"  class="field" id="topic" name="topic"><br>
+
+            <label class = "field_label"for="message">Mensaje:</label><br>
+            <textarea type="text"  class="field" id="message" name="message" rows="6" cols="20"> </textarea><br>
+
+            <button class="button" id="button_clean">Limpiar</button>
+
+            <input class="button" type="submit" value="Enviar" id="submit">
           </form> 
     </div>
     

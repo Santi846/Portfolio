@@ -186,3 +186,31 @@ body{
 #submit{
     margin-top: 20px;
 }
+
+.field{
+    margin-left: 60px;
+    width: 300px;
+}
+
+#message{
+    height: 190px;
+    max-width: 300px;
+    max-height: 190px;
+}
+
+.field_label{
+    margin-left: 60px;
+}
+
+#button_clean{
+    margin-left: 145px;
+}
+
+.button{
+    background: #6b705c;
+    border: solid 3px #2b2828;
+    border-radius: 5px;
+    color: #ededed;
+    font-family: 'Roboto';
+}
+
