@@ -86,8 +86,27 @@ function remove(){
     charCount++;
 };
 
-function cleanForm(e) {
-    e.preventDefault();
+/**The alert function will be helful when sending a message 
+ * While the 'ok' or 'cancel' element will be other
+*/
+/*
+function cleanAlert () {
+    alert("¿Deseas limpiar el texto que ingresaste?");
+}
+
+if (cleanAlert = ) {
+
+    function cleanForm() {
+        let emailForm = document.getElementById("EmailForm");
+        emailForm.reset();
+    }
+    
+} else {
+    alert("No se han limpiado los campos")
+}
+*/
+
+function cleanForm() {
     let emailForm = document.getElementById("EmailForm");
     emailForm.reset();
 }
