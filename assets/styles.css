@@ -10,6 +10,8 @@ body{
     margin-left: 3px;
     background: #ffcbcb;
     font-family: 'Roboto', sans-serif;
+    width: 467px;
+    height: 850px;
 }
 
 
@@ -183,6 +185,10 @@ body{
     bottom: 70px;
 }
 
+#swipe_up{
+    transition: scroll 15s;
+}
+
 #submit{
     margin-top: 20px;
 }
@@ -217,4 +223,8 @@ body{
 #email, #topic, #message{
     border: solid 3px #2b2828;
     border-radius: 5px;
+}
+
+#label_topic, #topic,#label_message , #message {
+    display: none;
 }
