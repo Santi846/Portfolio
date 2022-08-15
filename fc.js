@@ -1,3 +1,4 @@
+/*Start Developer title funcionality*/
 //text output
 const output = document.querySelector(".output");
 //result
@@ -85,6 +86,7 @@ function remove(){
     //Remove another letter
     charCount++;
 };
+/*Start form cleaner funcionality*/
 
 /**The alert function will be helful when sending a message 
  * While the 'ok' or 'cancel' element will be other
@@ -110,3 +112,20 @@ function cleanForm() {
     let emailForm = document.getElementById("EmailForm");
     emailForm.reset();
 }
+
+/*Start timeline funcionality*/
+
+const line = document.querySelector(".timeline-line-innerline");
+const timeline_events = document.querySelector("ul li");
+
+let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            //show timeline event
+        }
+    }
+
+    );
+}, {}
+
+);
