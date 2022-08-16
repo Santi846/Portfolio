@@ -118,10 +118,22 @@ function cleanForm() {
 const line = document.querySelector(".timeline-line-innerline");
 const timeline_events = document.querySelector("ul li");
 
+function showTime(e){
+    e.setAttributes("done", "true");
+    e.querySelector(".timeline-point").style.background = "blue";
+    e.querySelector(".date").style.opacity = "100%";
+    e.querySelector("p").style.opacity = "100%";
+}
+
 let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            //show timeline event
+            timeline_events.forEach((e) => {
+                showTime(e);
+                line.style.width = '100%';
+            }
+
+            );
         }
     }
 
@@ -129,3 +141,6 @@ let observer = new IntersectionObserver((entries, observer) => {
 }, {}
 
 );
+
+let target  = document.querySelector(".timeline ul");
+observer.observe(target);
