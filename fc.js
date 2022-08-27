@@ -124,7 +124,7 @@ function showTime(e){
     e.querySelector(".date").style.opacity = "100%";
     e.querySelector("p").style.opacity = "100%";
 }
-
+/*
 let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -144,3 +144,4 @@ let observer = new IntersectionObserver((entries, observer) => {
 
 let target  = document.querySelector(".timeline ul");
 observer.observe(target);
+*/

@@ -210,22 +210,31 @@
 
         <form action="mailto:arochas846@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm" id="EmailForm">
 
-            <label class = "field_label"for="email">Enviame un mail</label><br>
- 
-            
-
+            <label class = "field_label"for="email">Tu mail</label><br>
             <input type="email"  class="field" id="email" name="email" required><br>
-                <label class = "field_label"for="topic" id="label_topic">Asunto:</label><br>
+
+            <label class = "field_label"for="name" id="label_topic">Nombre:</label><br>
+            <input type="text" class="field" id="name" name="name" ><br>
+
+            <label class = "field_label"for="mobile" id="label_topic">Celular:</label><br>
+            <input type="text"  class="field" id="mobile" name="mobile"><br>
+
+            <label class = "field_label"for="web_site" id="label_topic">Sitio Web:</label><br>
+            <input type="text"  class="field" id="web_site" name="web_site" ><br>
+
+
+            <label class = "field_label"for="topic" id="label_topic">Asunto:</label><br>
             <input type="text"  class="field" id="topic" name="topic" required><br>
 
             <label class = "field_label"for="message" id="label_message">Mensaje:</label><br>
-            <textarea type="text"  class="field" id="message" name="message" rows="6" cols="20" required> </textarea><br>
+            <textarea type="text"  class="field" id="message" name="message" placeholder="Redacta tu mail" rows="6" cols="20" required> </textarea><br>
 
             <button onclick="cleanForm()" class="button" id="button_clean">Limpiar</button>
-            
-
 
             <input class="button" type="submit" value="Enviar mail" id="submit">
+
+            <span>Enviendo el mail</span>
+
           </form> 
     </div>
     

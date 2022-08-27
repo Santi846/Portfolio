@@ -214,16 +214,17 @@ body{
 
 .button{
     background: #6b705c;
-    border: solid 3px #2b2828;
+    border: solid 1px #2b2828;
     border-radius: 5px;
     color: #ededed;
     font-family: 'Roboto';
 }
 
-#email, #topic, #message{
+#email, #topic, #message, #name, #mobile, #web_site{
     border: solid 3px #2b2828;
     border-radius: 5px;
 }
+
 
 section{
     margin: 20px 0;
