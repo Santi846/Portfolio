@@ -130,11 +130,13 @@ observer.observe(target);
 
 /*Start contact form funcionality*/
 
-const form = document.querySelector('button', 'span');
-submit = form.querySelector('button');
-statusTxt = form.querySelector('span');
+const form = document.getElementById('submit', 'EmailFormResponse');
+submit = form.getElementById('submit');
+statusTxt = form.getElementById('EmailFormResponse');
 
-submit.onsubmit = (e)=> {
+
+
+function displaySendingMessage(e) {
     //preventing from FORM submiting
     e.preventDefault();
     statusTxt.style.display = "block";
