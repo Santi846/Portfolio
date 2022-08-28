@@ -225,6 +225,12 @@ body{
     border-radius: 5px;
 }
 
+#EmailFormResponse{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 35%;
+    display: none;
+}
 
 section{
     margin: 20px 0;

@@ -1,4 +1,5 @@
 /*Start Developer title funcionality*/
+
 //text output
 const output = document.querySelector(".output");
 //result
@@ -86,27 +87,8 @@ function remove(){
     //Remove another letter
     charCount++;
 };
-/*Start form cleaner funcionality*/
 
-/**The alert function will be helful when sending a message 
- * While the 'ok' or 'cancel' element will be other
-*/
-/*
-function cleanAlert () {
-    alert("¿Deseas limpiar el texto que ingresaste?");
-}
-
-if (cleanAlert = ) {
-
-    function cleanForm() {
-        let emailForm = document.getElementById("EmailForm");
-        emailForm.reset();
-    }
-    
-} else {
-    alert("No se han limpiado los campos")
-}
-*/
+/*Start cleanForm funcionality*/
 
 function cleanForm() {
     let emailForm = document.getElementById("EmailForm");
@@ -145,3 +127,15 @@ let observer = new IntersectionObserver((entries, observer) => {
 let target  = document.querySelector(".timeline ul");
 observer.observe(target);
 */
+
+/*Start contact form funcionality*/
+
+const form = document.querySelector('button', 'span');
+submit = form.querySelector('button');
+statusTxt = form.querySelector('span');
+
+submit.onsubmit = (e)=> {
+    //preventing from FORM submiting
+    e.preventDefault();
+    statusTxt.style.display = "block";
+};
