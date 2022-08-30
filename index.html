@@ -231,9 +231,11 @@
 
             <button onclick="cleanForm()" class="button" id="button_clean">Limpiar</button>
 
-            <input class="button" type="submit" value="Enviar mail" id="submit" onsubmit="displaySendingMessage()">
+            <input class="button" type="submit" value="Enviar mail" id="submit" onclick="displaySendingMessage()">
 
             <span id="EmailFormResponse">Enviando el mail...</span>
+
+            <span id="EmailFormFailResponse">Complete los datos, por favor</span>
 
 
           </form> 

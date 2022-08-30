@@ -130,14 +130,19 @@ observer.observe(target);
 
 /*Start contact form funcionality*/
 
-const form = document.getElementById('submit', 'EmailFormResponse');
-submit = form.getElementById('submit');
-statusTxt = form.getElementById('EmailFormResponse');
 
+function displaySendingMessage() {
 
+    const input = document.querySelector('input').value;
+    const textarea = document.querySelector('textarea').value;
 
-function displaySendingMessage(e) {
-    //preventing from FORM submiting
-    e.preventDefault();
-    statusTxt.style.display = "block";
-};
+    const formResponse = document.getElementById('EmailFormResponse');
+    const formFailResponse = document.getElementById('EmailFormResponse');
+
+    if (input && textarea === undefined) {
+        formResponse.style.display = "block";
+    } else {
+        formFailResponse.style.display = "block";
+    }
+}
+;
